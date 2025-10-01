@@ -30,3 +30,8 @@ here,✔ pandas didn’t create a new index
 >>>wine_reviews = pd.read_csv("../input/wine-reviews/winemag-data-130k-v2.csv", index_col=0)
 wine_reviews.head()
 
+#write code to save this DataFrame to disk as a csv file with the name  (imp)
+>>animals = pd.DataFrame({'Cows': [12, 20], 'Goats': [22, 19]}, index=['Year 1', 'Year 2'])
+>>animals.to_csv("cows_and_goats.csv",index=False)
+>>x=pd.read_csv("cows_and_goats.csv")
+>>x.head()
